@@ -1,0 +1,29 @@
+{
+	"name": "graphdat-twitter-stream-plugin",
+	"version": "0.0.1",
+	"private": false,
+	"description": "Twitter Streaming plugin for Graphat",
+	"main": "index.js",
+	"devDependencies": {},
+	"dependencies": {
+		"twitter-stream-oauth": "0.0.x",
+		"underscore": "1.5.x"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/graphdat/plugin-twitter-stream"
+	},
+	"keywords": [
+		"graphdat",
+		"plugin",
+		"twitter",
+		"twitter-stream",
+		"stream"
+	],
+	"author": "Graphdat <support@graphdat.com>",
+	"license": "Apache v2",
+	"bugs": {
+		"url": "https://github.com/graphdat/plugin-twitter-stream/issues"
+	},
+	"engine": "node >= 0.8.1"
+}

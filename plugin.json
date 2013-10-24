@@ -1,0 +1,57 @@
+{
+    "description" : "Displays data from the twitterverse",
+    "icon" : "icon.png",
+    "command" : "node index.js",
+    "postExtract" : "npm install",
+    "ignore" : "node_modules",
+
+    "metrics" : [
+        "TWITTER_KEYWORD_COUNT",
+        "TWITTER_USER_COUNT"
+    ],
+
+    "paramSchema" : [
+        {
+            "title" : "Consumer Key",
+            "name" : "consumerKey",
+            "description" : "Your Twitter Consumer Key",
+            "type" : "string"
+        },
+        {
+            "title" : "Consumer Secret",
+            "name" : "consumerSecret",
+            "description" : "Your Twitter Consumer Secret",
+            "type" : "string"
+        },
+        {
+            "title" : "Acess Token Key",
+            "name" : "accessTokenKey",
+            "description" : "Your Twitter Access Token Key",
+            "type" : "string"
+        },
+        {
+            "title" : "Acess Token Secret",
+            "name" : "accessTokenSecret",
+            "description" : "Your Twitter Access Token Secret",
+            "type" : "string"
+        },
+        {
+            "title": "Keyword Filter",
+            "name": "keywords",
+            "description": "The keywords you want to profile",
+            "type" : "array",
+            "items" : {
+                "type" : "string"
+            }
+        },
+        {
+            "title": "User Filter",
+            "name": "users",
+            "description": "The user you want to profile, in the format screen_name|userId, ex. SteveMartinToGo|14824849",
+            "type" : "array",
+            "items" : {
+                "type" : "string"
+            }
+        }
+    ]
+}

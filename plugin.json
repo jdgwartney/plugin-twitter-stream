@@ -24,13 +24,13 @@
             "type" : "string"
         },
         {
-            "title" : "Acess Token Key",
+            "title" : "Access Token Key",
             "name" : "accessTokenKey",
             "description" : "Your Twitter Access Token Key",
             "type" : "string"
         },
         {
-            "title" : "Acess Token Secret",
+            "title" : "Access Token Secret",
             "name" : "accessTokenSecret",
             "description" : "Your Twitter Access Token Secret",
             "type" : "string"

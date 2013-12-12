@@ -6,6 +6,7 @@
 	"main": "index.js",
 	"devDependencies": {},
 	"dependencies": {
+		"graphdat-plugin-tools" : "0.0.1",
 		"twitter-stream-oauth": "0.0.x",
 		"underscore": "1.5.x"
 	},

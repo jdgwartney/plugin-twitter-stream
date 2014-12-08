@@ -1,23 +1,39 @@
-# Twitter Stream Graphdat Plugin
+Boundary Twitter Stream Plugin
+------------------------------
 
-## Tracks the keywords and user metrics from [twitter](http://www.twitter.com)
+To get statistics from Twitter, you need to setup a twitter application first to get the required API keys.
 
-* TWITTER_KEYWORD_COUNT - The number of times a list of keywords appear
-* TWITTER_USER_COUNT - The number of times a user tweets
+### Platforms
+- Windows
+- Linux
+- OS X
+- SmartOS
 
-## Pre Reqs
+### Prerequisites
+- node version 0.8.0 or later
+- npm version 1.4.21 or later
 
-To get statistics from Twitter, you need to setup a twitter application first to get the required API keys.  To create a new application go to the [create page](https://dev.twitter.com/apps/new).
+### Plugin Setup
 
-Once you have your new twitter application generate the accessToken key and secret
+1. To create a new application go to the [create page](https://dev.twitter.com/apps/new).
+2. Once you have your new twitter application generate the accessToken key and secret
 
-### Installation & Configuration
+### Plugin Configuration Fields
 
-Once you have your application, copy and paste the keys into Graphdat
+|Field Name         |Description                                                                                 |
+|:------------------|:-------------------------------------------------------------------------------------------|
+|Consumer Key       |Your Twitter Consumer Key                                                                   |
+|Consumer Secret    |Your Twitter Consumer Secret                                                                |
+|Access Token Key   |Your Twitter Access Token Key                                                               |
+|Access Token Secret|Your Twitter Access Token Secret                                                            |
+|Keyword Filter     |The keywords you want to profile                                                            |
+|User Filter        |The user you want to profile, in the format screen_name|userId, ex. SteveMartinToGo|14824849|
 
-* The `consumerKey` field comes from your twitter application
-* The `consumerSecret` field comes from your twitter application
-* The `accessTokenKey` field comes from your twitter application
-* The `accessTokenSecret` field comes from your twitter application
-* The `keywords` are the list of keywords to monitor on twitter
-* The `users` are the list of users to monitor on twitter
+### Metrics Collected
+
+Tracks the keywords and user metrics from [twitter](http://www.twitter.com)
+
+|Metric Name          |Description                             |
+|:--------------------|:---------------------------------------|
+|Twitter Keyword Count|The number of times a keyword is mention|
+|Twitter User Count   |The number of times a user tweets       |
